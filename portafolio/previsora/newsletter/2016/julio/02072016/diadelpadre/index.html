@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	
+
+<meta property="og:url" content="http://previpass.co/mesdelpadre/" />
+<meta property="og:title" content="Mes Del Padre" />
+<meta property="og:description" content="Ah&iacute; est&aacute; pintado mi pap&aacute;" />
+<meta property="og:image" content="http://www.previpass.co/mesdelpadre/images/header.jpg" />
+
+
+	<title>Mesdelpadre</title>
+
+</head>
+
+<style>	
+html { 
+  background: url(images/bg.jpg) repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+  font-family: 'Sofia Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+video {
+  width: 100%; 
+  height: auto;
+  margin-top: 20rem;
+}
+.contenedor {
+	max-width: 120rem;
+	width: 100%;
+	margin: 0 auto;
+}
+.central{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.compartir {
+	margin-top: 1rem;
+	text-align: center;
+}
+@media (min-width: 768px) { 
+video {
+	margin-top: unset;
+}
+.video {
+  width: 60%;
+  margin-top: 6rem;
+  margin-bottom: 0;
+  overflow-y: hidden;
+}
+
+}	
+</style>
+<body class="fondo-repeat">
+	<div  src="images/fondo2.png" class="central"><!-- poster="star.png" -->
+		<img height="auto" width="100%" alt="">
+		<div class="video contenedor">
+			<div>
+				<video autoplay controls tabindex="0">
+				<source src="papa.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				<source src="video.webm" type='video/webm; codecs="vp8, vorbis"' />
+				</video>		
+				<div class="compartir"><a href="https://www.facebook.com/sharer.php?s=100&p[url]=http://previpass.co/mesdelpadre/" target="_blank"><img src="images/compartir.png" width="250" alt=""></a></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

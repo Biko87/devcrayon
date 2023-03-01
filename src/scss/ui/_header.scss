@@ -1,0 +1,102 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navbar {
+    font-size: 1.8rem;
+    @include m.tablet {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 7rem;
+        align-items: center;
+    }
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: .5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 2.4rem;
+    @include m.tablet {
+        display: none;
+    }
+}
+.logo {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    @include m.tablet {
+        margin-top: 0;
+        margin-left: 8rem;
+    }
+}
+#chkToggle {
+    display: none;
+  }
+#chkToggle:checked + ul.main-nav {
+    display: block;
+    @include m.tablet {
+        display: flex;
+    }
+}
+.main-nav {
+    list-style-type: none;
+    display: none;
+    @include m.tablet {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+    @include m.tablet {
+        margin: 0;
+    }
+}
+.navegacion__link {
+    font-weight: 900;
+    color: v.$blanco;
+    @include m.tablet {
+        padding: 1rem 2rem;
+    }
+}
+.navegacion__link--activo {
+    color: v.$amarillo;
+}
+.navegacion__link--hover:hover {
+    color: v.$amarillo;
+}
+
+/* Whatsapp */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:5rem;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+  background-color: #2BB741;
+}
+.my-float{
+	margin-top:16px;
+}
+/* End Whatsapp */
+
+/* división */
+.division {
+    border-top: 1px solid var(--blanco);
+  }
+  /* End división */

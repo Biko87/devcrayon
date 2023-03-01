@@ -1,0 +1,104 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* section home */
+.home { 
+
+    border-top: 1px solid v.$blanco;
+    background: linear-gradient(-45deg, #454360, #FF4C60, #FFD15C, #353353);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    
+.home__contenedor {
+    padding: v.$separacion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+}
+.text-name {
+    color: v.$blanco;
+    text-align: center;
+    line-height: 2;
+}
+.text-description {
+    text-align: center;
+    color: v.$blanco;
+    font-size: 2rem;
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+    @include m.tablet {
+        flex-direction: row;
+    }
+}
+.img-icons {
+    width: 7rem;
+    @include m.tablet {
+        width: 6rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+.neon {
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.neon:hover {
+    box-shadow: 0 0 10px 0 v.$blanco inset, 0 0 20px 2px v.$blanco;
+    border: 3px solid v.$blanco;
+    border-radius: .5rem;
+    color: v.$blanco;
+}
+.content-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.tablet {
+        padding: 2.5rem 0;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+.btn {
+    background-color: transparent;
+    box-shadow: 0 0 10px 0 v.$blanco inset, 0 0 20px 2px v.$blanco;
+    border-radius: 3rem;
+    border: .3rem solid v.$blanco;
+    padding: 1rem 1rem;
+    line-height: 1;
+    font-size: 2rem;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: v.$blanco;
+    margin: .5rem;
+    @include m.tablet {
+        font-size: 1.6rem;
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+    }
+}
+.btn:hover {
+    box-shadow: 0 0 10px 0 v.$blanco inset, 0 0 20px 2px v.$blanco;
+    border: 3px solid v.$blanco;
+    background-color: v.$blanco;
+    color: v.$primario;
+}
+/* End section home */
+}

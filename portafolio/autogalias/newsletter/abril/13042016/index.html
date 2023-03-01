@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport">
+	<title>AutoGalias</title>
+
+	<style type="text/css">
+
+@font-face{font-family:"Old Style Bold";
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLifeOldStyle-Bold.eot);
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLifeOldStyle-Bold.eot?#iefix) format("embedded-opentype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLifeOldStyle-Bold.woff) format("woff"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLifeOldStyle-Bold.ttf) format("truetype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLifeOldStyle-Bold.svg#RenaultLifeOldStyle-Bold) format("svg");
+font-weight:400;font-style:normal}
+
+@font-face{font-family:"Renault Regular";
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Regular.eot);
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Regular.eot?#iefix) format("embedded-opentype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Regular.woff) format("woff"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Regular.ttf) format("truetype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Regular.svg#RenaultLife) format("svg");
+font-weight:400;font-style:normal}
+
+@font-face{font-family:"Renault Bold";
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Bold.eot);
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Bold.eot?#iefix) format("embedded-opentype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Bold.woff) format("woff"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Bold.ttf) format("truetype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Bold.svg#RenaultLife-Bold) format("svg");
+font-weight:400;font-style:normal}
+
+@font-face{font-family:"Renault Bold Italic";
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-BoldItalic.eot);
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-BoldItalic.eot?#iefix) format("embedded-opentype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-BoldItalic.woff) format("woff"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-BoldItalic.ttf) format("truetype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-BoldItalic.svg#RenaultLife-BoldItalic) format("svg");
+font-weight:400;font-style:normal}
+
+@font-face{font-family:"Renault Italic";
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Italic.eot);
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Italic.eot?#iefix) format("embedded-opentype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Italic.woff) format("woff"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Italic.ttf) format("truetype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Italic.svg#RenaultLife-Italic) format("svg");
+font-weight:400;font-style:normal}
+
+@font-face{font-family:"Renault Light";
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.eot);
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.eot?#iefix) format("embedded-opentype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.woff) format("woff"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.ttf) format("truetype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.svg#RenaultLife-Light) format("svg");
+font-weight:400;font-style:normal}
+
+@font-face{font-family:Condensed;
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.eot);
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.eot?#iefix) format("embedded-opentype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.woff) format("woff"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.ttf) format("truetype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-Light.svg#RenaultLife-Light) format("svg");
+font-weight:400;font-style:normal}
+
+@font-face{font-family:"Renault Light Italic";
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-LightItalic.eot);
+src:url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-LightItalic.eot?#iefix) format("embedded-opentype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-LightItalic.woff) format("woff"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-LightItalic.ttf) format("truetype"),url(http://autogalias.com/v2_base/newsletter/18022016/fonts/RenaultLife-LightItalic.svg#RenaultLife-LightItalic) format("svg");
+font-weight:400;font-style:normal}
+
+html *{
+   font-family: "Renault Regular",Helvetica, Arial, sans-serif !important;
+}
+
+		/* Cool mobile stuff, please don't touch :) */
+
+/*td,tr{
+	border: 1px solid black;
+}*/
+.text_responsive					{ padding: 0px 60px 0 60px; }
+@media only screen and (max-width: 600px) {
+	body                    { width: 100% !important; -webkit-text-size-adjust: none; }
+	table table             { width: 320px !important; }
+	.scaleHeader            { width: 320px !important; }
+	.scaleHeaderLogo        { width: 300px !important; }
+	.scaleFullwidth         { width: 300px !important; height: 127px !important; }
+	.scaleSeperator         { width: 300px !important; }
+	.scaleFollowus          { width: 240px !important; }
+	.fullWidth              { width: 320px !important; }
+	.mobileImage            { margin: 20px auto; }
+	.center                 { text-align: center !important; }
+	.tableCenter            { margin-left: auto !important; margin-right: auto !important; float: none !important; }
+	.columnMargin           { margin-bottom: 20px !important; }
+	.button                 { margin-left: auto !important; margin-right: auto !important; float: none !important; }
+	.text_responsive					{ padding: 10px 40px 0 40px;}
+	.img_footer				{ width: 100%;	}
+}
+.mobileImage {margin: 20px auto; }
+</style>
+</head>
+<body  style="margin: 0; padding: 0; background:#EDEDED;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">      
+<font style="font-size:1px; color:#EDEDED;">	
+ 
+Del 8 al 30 de Abril llévate con AutoGalias un LOGAN o un SANDERO 2017 con cuota inicial desde el 0%, tasa de interés desde el 0% 
+y bonos de accesorios hasta de $1’900.000.
+
+											
+
+
+</font>
+	<!-- START PAGE WRAPPER -->
+	<table width="100%" cellspacing="0" cellpadding="0" align="center"  style="background:#EDEDED; color:#666; font-family: 'Renault Regular', Tahoma, Geneva, sans-serif; font-size:14px;">
+		<tr>
+			<td valign="top">
+
+				<!-- START VIEW ONLINE LINK -->
+				<table width="100%" class="fullWidth" cellspacing="0" cellpadding="0" align="center"style="background:#EDEDED;">
+					<tr>
+						<td valign="top">
+							<table width="720" cellspacing="0" cellpadding="0" align="center">
+								<tr>
+									<td style="font-family: 'Renault Regular',Helvetica, Arial, sans-serif; font-size: 11px; color: #929da7; padding: 10px 0 10px 0; text-align: right;">
+
+										<table width="450" cellspacing="0" cellpadding="0" align="left">
+											<tr>
+												<td style="font-family: 'Renault Regular',Helvetica, Arial, sans-serif; font-size: 11px; color: #929da7; padding: 10px 0 10px 0; text-align: left;">Problemas con la previsualizaci&oacute;n? <a href="http://www.autogalias.com/v2_base/newsletter/13042016/" style="font-size: 11px; color: #1D242C; text-decoration: none;">Clic para ver la versi&oacute;n online</a></td>
+											</tr>
+										</table>                                        
+
+										<table width="250" cellspacing="0" cellpadding="0" align="right">
+											<tr>
+												<td style="font-size: 11px; color: #929da7; padding: 10px 0 10px 0; text-align: right;">Miércoles, 13 de Abril de 2016.</td>
+											</tr>
+										</table> 
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END VIEW ONLINE LINK -->
+
+				<!-- START FULL WIDTH QUOTE+LOGO -->
+				<table width="100%" cellspacing="0" cellpadding="0" align="center">
+					<tr>
+						<td valign="top">
+							<table width="750" cellspacing="0" cellpadding="0" align="center"  style="background:#FFF;">
+								<tr>
+									<td width="750"  valign="top"><!-- START LOGO --><!-- END LOGO -->
+										<div style=" font-size:10px; color:#FFF; font-family: Tahoma, Geneva, sans-serif;" align="right"><img src="http://www.autogalias.com/v2_base/newsletter/13042016/images/header.jpg" style="width:100%;"></div>
+									</td>
+								</tr>
+							</table>   
+						</td>
+					</tr>
+				</table>
+				<!-- END FULL WIDTH QUOTE+LOGO -->
+
+				<!-- START LEFT IMAGE RIGHT TEXT -->
+				<table width="100%" cellspacing="0" style="background:#EDEDED;" cellpadding="0" align="center">
+					<tr>
+						<td valign="top">
+							<table width="750" cellspacing="0" cellpadding="0" align="center" style="background:#fff;">
+								<tr>
+									<td>
+										<table cellspacing="0" cellpadding="0">
+											<tr>
+											<td  valign="top" style="line-height:24px;"> 
+													<br>
+
+													<div style="font-family:'Renault Regular',Helvetica, Arial, sans-serif; font-size:15px; color:#242223;" class="text_responsive" align="center">
+														<p style="font-size:23px; margin-top:0px;"><strong>Hola,</strong></p>	 
+								Del 8 al 30 de Abril llévate con AutoGalias un LOGAN o un SANDERO 2017 <strong>con cuota inicial desde el 0%, tasa de interés desde el 0% y bonos de accesorios hasta de $1’900.000.</strong><br><br>
+
+							<strong>Lo único difícil para tenerlos, es elegir con cuál quedarte.</strong>
+                                                     
+
+																	
+
+														
+														
+
+													</div>
+
+													<br>
+													<div style="border-top:1px solid #ccc; border-bottom:1px solid #ccc; margin:0px 50px;" align="right">
+														<img src="http://www.autogalias.com/v2_base/newsletter/18022016/images/redes.png" alt="" usemap="#Map">
+													</div>
+
+
+
+													</td>
+												</tr>
+												
+											</table>
+
+ 
+													</div>
+													<div style=" font-size:10px; color:#FFF; font-family: Tahoma, Geneva, sans-serif;" align="left"><img src="http://www.autogalias.com/v2_base/newsletter/13042016/images/footer.jpg" class="img_footer"></div>
+
+												 </td>
+											</tr>
+										</table>
+									</td>									
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END LEFT IMAGE RIGHT TEXT -->
+				
+				</td>
+			</tr>
+		</table>
+		<!-- END PAGE WRAPPER -->
+
+
+		<br/>
+		<br/>
+
+	
+    <map name="Map">
+    
+      <area shape="circle" coords="81,22,15" href="https://www.facebook.com/autogalias" target="new" alt="facebook">
+      <area shape="circle" coords="123,22,17" href="https://www.youtube.com/channel/UCTNg-LsTaUDmiXyIo86Be5A" target="new" alt="youtube">
+</map>
+</body><area shape="circle" coords="41,21,15" href="https://twitter.com/_AutoGalias" target="new" alt="twitter">
+	</html><area shape="circle" coords="41,21,15" href="https://twitter.com/_AutoGalias" target="new" alt="twitter">

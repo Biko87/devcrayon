@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>DEV-B&M</title>
+    <link rel="icon" type="image/x-icon" href="../build/img/logo-b-dark.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet">
+    <!-- App css -->
+    <link rel="stylesheet" href="../build/css/app.css">
+     <!-- Icons font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+     <!-- Tailwind css -->
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Menu Nav -->
+    <nav class="navbar">
+        <label class="navbar-toggle" for="chkToggle">
+                <i class="fa fa-bars"></i>
+            </label>
+        <a href="../index.html" class="logo"><img src="../build/img/logo-b-light.svg" alt="Logo Brayam"></a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav">
+          <li>
+            <a class="navegacion__link navegacion__link--activo" href="../index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="navegacion__link navegacion__link--hover" href="#contact">Contácteme</a>
+          </li>
+        </ul>
+      </nav>
+    <!-- End Menu Nav -->
+
+   
+    <!-- Whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=+573223704897&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.%20" class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+    <!-- End Whatsapp -->
+
+    <div class="division"></div>
+
+    <h2 class="text-center text-white text-5xl py-5 uppercase">curriculum vitae</h2>
+
+        <!-- newsletter -->
+        <section class="newsletter">
+            <div class="newsletter_content_generalli contenedor">
+                    <div class="newsletter_information container">
+                        <ul class="ul-li">
+                            <li class="li">
+                                <a href="./cv-brayam-martinez.pdf" target="_blank" class="a">Hoja de vida</a>
+                            </li>
+                            <li class="li">
+                                <a href="./Diploma-profesional.pdf" target="_blank" class="a">Diploma-profesional</a>
+                            </li>
+                            <li class="li">
+                                <a href="./certificado-udemy-css.pdf" target="_blank" class="a">Certificado CSS, FLEXBOX, GRID, SASS</a>
+                            </li>
+                            <li class="li">
+                                <a href="./diploma-git-github-appsco.pdf" target="_blank" class="a">Certificado git-github</a>
+                            </li>
+                            <li class="li">
+                                <a href="./Movistar-Diseno-Web-con-HTML-5-CSS.pdf" target="_blank" class="a">Certificado Movistar, Diseno Web HTML5 y CSS3</a>
+                            </li>
+                            <li class="li">
+                                <a href="./platzi-fw-frontend.pdf" target="_blank" class="a">Certificado Platzi Frontend</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </section>
+        <!-- End newsletter -->
+
+
+        <!-- Contácteme -->
+    <section class="contacteme" id="contact">
+        <h2 class="text-center text-white text-5xl py-5">Contácteme</h2>
+        <div class="contacteme_contenedor contenedor">
+            <div class="contacteme_icons">
+                <p><i class="fa-solid fa-location-dot py-5"></i> Carrera 11 # 15-65</p>
+                <p><i class="fa-solid fa-phone py-5"></i> (+57) 322-370-4897</p>
+                <p><i class="fa-solid fa-envelope py-5"></i> 
+                   <a href="mailto:brayammartinezperdomo@gmail.com" class="email">brayammartinezperdomo@gmail.com</a></p>
+                <div class="icons-social">
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/brayam.martinezperdomo" target="_blank"><i class="fab fa-facebook-f"></i></a></li>                        
+                        <li><a href="https://api.whatsapp.com/send?phone=+573223704897&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.%20" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/brayam-martinez-perdomo/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacteme_form">
+            <div class="p-10 mt-5">
+                <form id="formulario" action="phpmailer.php" method="post" class="space-y-3">                                  
+                    <div class="flex flex-col space-y-2">
+                        <label for="asunto" class="font-regular font-medium text-white">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="border border-gray-300 px-3 py-2 rounded-lg">
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+                        <label for="nombre" class="font-regular font-medium text-white">Nombre o Empresa</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre o Empresa" class="border border-gray-300 px-3 py-2 rounded-lg">
+                    </div>
+                    
+                    <div class="flex flex-col space-y-2">
+                        <label for="Email" class="font-regular font-medium text-white">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" class="border border-gray-300 px-3 py-2 rounded-lg">
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+                        <label for="phone" class="font-regular font-medium text-white">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="border border-gray-300 px-3 py-2 rounded-lg">
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                            <label for="mensaje" class="font-regular font-medium text-white">Mensaje</label>
+                            <textarea id="mensaje" placeholder="Tu Mensaje..." name="mensaje" class="border border-gray-300 px-3 py-2 rounded-lg h-36"></textarea>
+                        </div> 
+                        
+                        <input type="submit" value="Enviar" name="submit" class="bg-pink-600 shadow-xl hover:bg-yellow-300 text-white font-bold rounded-full p-4 w-48">
+                    </div>                   
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contácteme -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_contenedor contenedor">
+            <p>Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../js/app.js"></script>
+    <script src="../js/other.js"></script>
+</body>
+</html>

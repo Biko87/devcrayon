@@ -1,0 +1,3 @@
+Recuerda que debe hablitar la dependencia de cssnano 
+para compirmir el código css en una sola línea y de está manera lograr
+un buen perfomance.

@@ -1,0 +1,87 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* section about */
+.about {
+    margin-top: 5rem;
+}
+.about__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, transparent 50%, #FF4C60 50%, #FF4C60 100%);
+    padding-top: 1.5rem;
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 2rem;
+        background-image: linear-gradient(to right, transparent 25%, #FF4C60 25%, #FF4C60 100%);
+        background-size: 100%;
+        border-radius: 2rem; 
+    }
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.tablet { 
+        margin-right: 10rem;
+    }
+}
+
+.about__text {
+    margin: 2rem .2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    @include m.tablet { 
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        padding-bottom: unset;
+    }
+}
+.about__contenedor p {
+    color: v.$blanco;;
+}
+.title_about {
+    color: v.$blanco;
+    margin: 0;
+    font-size: 5rem;
+}
+.about__dark {
+    background-color: v.$rojo;;
+}
+.barra-progreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.title_developer {
+    color: v.$blanco;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    @include m.tablet {
+        font-size: 2rem;
+    }
+}
+.barra_container {
+    width: 100%;
+    border-radius: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    @include m.tablet { 
+        margin: 0 1.5rem 3rem 0;
+    }
+  }
+  .barra_skills {
+    color: white;
+    border-radius: 3rem; 
+    text-transform: uppercase;
+    @include m.tablet { 
+        display: none;
+    }   
+  }
+/* End section about */

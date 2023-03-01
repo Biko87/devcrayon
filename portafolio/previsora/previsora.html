@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Dev Crayon - Desarrollador Front End</title>
+    <link rel="icon" type="image/x-icon" href="../../build/img/logo-b-dark.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet">
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="../../build/css/normalize.css">
+    <!-- App css -->
+    <link rel="stylesheet" href="../../build/css/app.css">
+     <!-- Icons font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+     <!-- Tailwind css -->
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- Menu Nav -->
+    <nav class="navbar">
+        <label class="navbar-toggle" for="chkToggle">
+                <i class="fa fa-bars"></i>
+            </label>
+        <a href="../../index.html" class="logo"><img src="../../build/img/logo-b-light.svg" alt="Logo Brayam"></a>
+        <input type="checkbox" id="chkToggle"></input>
+        <ul class="main-nav">
+          <li>
+            <a class="navegacion__link navegacion__link--activo" href="../../index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="navegacion__link navegacion__link--hover" href="#contact">Contácteme</a>
+          </li>
+        </ul>
+      </nav>
+    <!-- End Menu Nav -->
+
+   
+    <!-- Whatsapp -->
+    <a href="https://api.whatsapp.com/send?phone=+573223704897&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.%20" class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+    <!-- End Whatsapp -->
+
+    <div class="division"></div>
+    
+    <!-- works -->
+    <h2 class="text-center text-white text-5xl py-5 uppercase">Previsora</h2>
+    <section class="works">
+        <div class="works_previsora contenedor">
+                <div class="works_information previsora">
+                    <a class="works_btn_title" href="./copa2016/index.html" target="_blank">Copa América 2016</a>
+                    <br>
+                    <a class="works_btn" href="./copa2016/index.html" target="_blank">Visítame</a>
+                </div>
+                <div class="works_information previsora">
+                    <a class="works_btn_title" href="./lifemilesapp/index.html" target="_blank">Life Miles</a>
+                    <br>
+                    <a class="works_btn" href="./lifemilesapp/index.html" target="_blank">Visítame</a>
+                </div>
+                <div class="works_information previsora">
+                    <a class="works_btn_title" href="./dory-registro/index.html" target="_blank">Dory</a>
+                    <br>
+                    <a class="works_btn" href="./dory-registro/index.html" target="_blank">Visítame</a>
+                </div>
+        </div>
+    </section>
+    <!-- End works -->
+
+
+        <!-- newsletter -->
+        <section class="newsletter">
+            <h2 class="text-center text-white text-5xl py-5 uppercase">Newsletters</h2>
+            <div class="newsletter_content contenedor">
+                    <div class="newsletter_information container">
+                        <a class="works_btn_title" href="./previsora.html">Noviembre 2015</a>
+                        <ul class="ul-li">
+                            <li class="li">
+                                <a href="./newsletter/2015/noviembre/05112015/index.html" target="_blank">05/11/2015</a>
+                            </li>
+                            <li class="li">
+                                <a href="./newsletter/2015/noviembre/05112015-2/index.html" target="_blank">05/11/2015-2</a>
+                            </li>
+                            <li class="li">
+                                <a href="./newsletter/2015/noviembre/11112015/index.html" target="_blank">11/11/2015</a>
+                            </li>
+                            <li class="li">
+                                <a href="./newsletter/2015/noviembre/12112015/index.html" target="_blank">12/11/2015</a>
+                            </li>
+                            <li class="li">
+                                <a href="./newsletter/2015/noviembre/13112015/index.html" target="_blank">13/11/2015</a>
+                            </li>
+                        </ul>
+                        <div id="obj2">
+                            <a class="works_btn" href="javascript:void(0);"  onclick="mostrar();">Más Newsletter</a>
+                        </div>
+
+
+
+                        <div class="newsletter_information container" id="obj1">
+                            <ul class="ul-li">
+                                <li class="li">
+                                    <a href="./newsletter/2015/noviembre/18112015/index.html" target="_blank">18/11/2015</a>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2015/noviembre/19112015/index.html" target="_blank">19/11/2015</a>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2015/noviembre/23112015/index.html" target="_blank">23/11/2015</a>
+                                </li>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2015/noviembre/30112015/index.html" target="_blank">30/11/2015</a>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2015/noviembre/30112015-2/index.html" target="_blank">30/11/2015-2</a>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2015/noviembre/30112015-3/index.html" target="_blank">30/11/2015-3</a>
+                                </li>
+                            </ul>
+                            <a class="works_btn" href="javascript:void(0);"  onclick="ocultar();">Ver Menos</a>
+                        </div>
+                    </div>
+
+                    <div class="newsletter_information container">
+                        <a class="works_btn_title" href="./previsora.html">Diciembre 2015</a>
+                        <ul class="ul-li">
+                            <li class="li">
+                                <a href="./newsletter/2015/diciembre/04122015/index.html" target="_blank">04/12/2015</a>
+                            </li>
+                            <li class="li">
+                                <a href="./newsletter/2015/diciembre/04122015-2/index.html" target="_blank">04/12/2015-2</a>
+                            </li>
+                            <li class="li">
+                                <a href="./newsletter/2015/diciembre/11122015/index.html" target="_blank">11/12/2015</a>
+                            </li>
+                            <li class="li">
+                                <a href="./newsletter/2015/diciembre/15122015/index.html" target="_blank">15/12/2015</a>
+                            </li>
+                            <li class="li">
+                                <a href="./newsletter/2015/diciembre/17122015/index.html" target="_blank">17/12/2015</a>
+                            </li>
+                        </ul>
+                        <div id="obj4">
+                            <a class="works_btn" href="javascript:void(0);"  onclick="mostrar1();">Más Newsletter</a>
+                        </div>
+
+
+
+                        <div class="newsletter_information container" id="obj3">
+                            <ul class="ul-li">
+                                <li class="li">
+                                    <a href="./newsletter/2015/diciembre/22122015/index.html" target="_blank">22/12/2015</a>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2015/diciembre/24122015/index.html" target="_blank">24/12/2015</a>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2015/diciembre/30122015/index.html" target="_blank">30/12/2015</a>
+                                </li>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2015/diciembre/30122015-1/index.html" target="_blank">30/12/2015-1</a>
+                                </li>
+                            </ul>
+                            <a class="works_btn" href="javascript:void(0);"  onclick="ocultar1();">Ver Menos</a>
+                        </div>
+                    </div>
+
+                    <div class="newsletter_information container">
+                        <a class="works_btn_title" href="./previsora.html">Mayo 2016</a>
+                        <ul class="ul-li">
+                            <li class="li">
+                                <a href="./newsletter/2016/mayo/03052016/index.html" target="_blank">03/05/2016</a>
+                            </li>
+                        </ul>
+                        <ul class="ul-li">
+                            <li class="li">
+                                <a href="./newsletter/2016/mayo/04052016/index.html" target="_blank">04/05/2016</a>
+                            </li>
+                        </ul>
+                        <ul class="ul-li">
+                            <li class="li">
+                                <a href="./newsletter/2016/mayo/10052016/index.html" target="_blank">10/05/2016</a>
+                            </li>
+                        </ul>
+                        <ul class="ul-li">
+                            <li class="li">
+                                <a href="./newsletter/2016/mayo/21052016/index.html" target="_blank">21/05/2016</a>
+                            </li>
+                        </ul>
+                        <ul class="ul-li">
+                            <li class="li">
+                                <a href="./newsletter/2016/mayo/23052016/index.html" target="_blank">23/05/2016</a>
+                            </li>
+                        </ul>
+                        <div id="obj6">
+                            <a class="works_btn" href="javascript:void(0);"  onclick="mostrar2();">Más Newsletter</a>
+                        </div>
+
+                        <div class="newsletter_information container" id="obj5">
+                            <ul class="ul-li">
+                                <li class="li">
+                                    <a href="./newsletter/2016/mayo/23052016-2/index.html" target="_blank">23/05/2016-2</a>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2016/mayo/26052016/index.html" target="_blank">26/05/2016</a>
+                                </li>
+                                <li class="li">
+                                    <a href="./newsletter/2016/mayo/27052016/index.html" target="_blank">27/05/2016</a>
+                                </li>
+                            </ul>
+                            <a class="works_btn" href="javascript:void(0);"  onclick="ocultar2();">Ver Menos</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- End newsletter -->
+
+        <section class="newsletter">
+            <h2 class="text-center text-white text-5xl py-5 uppercase">Newsletters</h2>
+            <div class="newsletter_content contenedor">
+                <div class="newsletter_information container">
+                    <a class="works_btn_title" href="./previsora.html">Febrero 2016</a>
+                    <ul class="ul-li">
+                        <li class="li">
+                            <a href="./newsletter/2016/febrero/16022016/index.html" target="_blank">02/07/2016</a>
+                        </li>
+                    </ul>
+                    <ul class="ul-li">
+                        <li class="li">
+                            <a href="./newsletter/2016/febrero/26022016/index.html" target="_blank">06/07/2016</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="newsletter_information container">
+                    <a class="works_btn_title" href="./previsora.html">Julio 2016</a>
+                    <ul class="ul-li">
+                        <li class="li">
+                            <a href="./newsletter/2016/julio/02072016/index.html" target="_blank">02/07/2016</a>
+                        </li>
+                    </ul>
+                    <ul class="ul-li">
+                        <li class="li">
+                            <a href="./newsletter/2016/julio/06072016/index.html" target="_blank">06/07/2016</a>
+                        </li>
+                    </ul>
+                    <ul class="ul-li">
+                        <li class="li">
+                            <a href="./newsletter/2016/julio/18072016/index.html" target="_blank">18/07/2016</a>
+                        </li>
+                    </ul>
+                    <ul class="ul-li">
+                        <li class="li">
+                            <a href="./newsletter/2016/julio/28072016/index.html" target="_blank">28/07/2016</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contácteme -->
+    <section class="contacteme" id="contact">
+        <h2 class="text-center text-white text-5xl py-5">Contácteme</h2>
+        <div class="contacteme_contenedor contenedor">
+            <div class="contacteme_icons">
+                <p><i class="fa-solid fa-location-dot py-5"></i> Carrera 11 # 15-65</p>
+                <p><i class="fa-solid fa-phone py-5"></i> (+57) 322-370-4897</p>
+                <p><i class="fa-solid fa-envelope py-5"></i> 
+                   <a href="mailto:brayammartinezperdomo@gmail.com" class="email">brayammartinezperdomo@gmail.com</a></p>
+                   <p><i class="fa-solid fa-envelope py-5"></i> 
+                        <a href="mailto:devcrayon@devcrayon.com" class="email">devcrayon@devcrayon.com</a></p>
+                <div class="icons-social">
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/brayam.martinezperdomo" target="_blank"><i class="fab fa-facebook-f"></i></a></li>                        
+                        <li><a href="https://api.whatsapp.com/send?phone=+573223704897&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.%20" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/brayam-martinez-perdomo/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contacteme_form">
+            <div class="p-10 mt-5">
+                <form id="formulario" action="phpmailer.php" method="post" class="space-y-3">                                  
+                    <div class="flex flex-col space-y-2">
+                        <label for="asunto" class="font-regular font-medium text-white">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="border border-gray-300 px-3 py-2 rounded-lg">
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+                        <label for="nombre" class="font-regular font-medium text-white">Nombre o Empresa</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre o Empresa" class="border border-gray-300 px-3 py-2 rounded-lg">
+                    </div>
+                    
+                    <div class="flex flex-col space-y-2">
+                        <label for="Email" class="font-regular font-medium text-white">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" class="border border-gray-300 px-3 py-2 rounded-lg">
+                    </div>
+
+                    <div class="flex flex-col space-y-2">
+                        <label for="phone" class="font-regular font-medium text-white">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="border border-gray-300 px-3 py-2 rounded-lg">
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                            <label for="mensaje" class="font-regular font-medium text-white">Mensaje</label>
+                            <textarea id="mensaje" placeholder="Tu Mensaje..." name="mensaje" class="border border-gray-300 px-3 py-2 rounded-lg h-36"></textarea>
+                        </div> 
+                        
+                        <input type="submit" value="Enviar" name="submit" class="bg-pink-600 shadow-xl hover:bg-yellow-300 text-white font-bold rounded-full p-4 w-48">
+                    </div>                   
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contácteme -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_contenedor contenedor">
+            <p>Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="../../js/app.js"></script>
+    <script src="../../js/other.js"></script>
+</body>
+</html>

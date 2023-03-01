@@ -1,0 +1,106 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* Trabajos */
+.productos {
+    padding: 5rem 1.5rem;
+  }
+  .producto__descripcion {
+    text-align: center;
+    margin: 2rem .3rem 0rem .3rem;
+    border-radius: 3rem;
+    @include m.tablet {
+        margin-bottom: 0;
+    }
+  }
+  .producto__descripcion img {
+    max-width: 100%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    transition-property: transform background-size;
+    transition-duration: .3s;
+  }
+  .producto__descripcion:hover img {
+    transform: scale(1.1);
+    background-size: 3rem;
+  }
+  .producto__descripcion a {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    color: v.$dark;
+    background-color: v.$amarillo;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+  .producto__descripcion a:hover {
+    background-color: v.$rojo; 
+    color: v.$blanco;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+  @include m.tablet {
+    .productos__listado {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+  }
+  .works {
+    padding: v.$separacion;
+  }
+  .works_previsora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-color: rgb(229 231 235);
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+  }
+  .previsora{ 
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    border-radius: 1rem;
+  }
+  .works_btn_title {
+    color: v.$amarillo;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    @include m.tablet {
+        font-size: 2rem;
+    }
+  }
+  .works_information p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: left;
+    color: v.$blanco;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;  
+    margin-left: 1rem;
+  }
+  .works_btn {
+    background-color: v.$rojo;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: v.$blanco;
+  }
+  .works_btn:hover {
+    background-color: v.$amarillo;
+    color: v.$dark;
+  }

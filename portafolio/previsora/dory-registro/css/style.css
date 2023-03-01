@@ -1,0 +1,243 @@
+:root{
+  /* Colores */
+  --primario: #23313B;
+  --negro: #000;
+  --blanco: #FFFFFF;
+  --blue: #1ab188;
+  --blueDark: #179b77;
+  --verde: #82BF02; 
+  --gris: #425158;
+  /* End Colores */
+  
+  --separacion: 5rem;
+  --fuentePrincipal: 'Titillium Web', sans-serif;
+  --fuenteSecundaria: 'Lato', sans-serif;
+  }
+/* html-body */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+  background: url(../images/fondo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+/* End html-body */
+
+/** Globales **/
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+h1, h2, h3 {
+  font-weight: 900;
+  font-family: var(--fuenteSecundaria);
+}
+h1 {
+  font-size: 2rem;
+  color: var(--blanco);
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+/** End Globales **/
+
+/* Header */
+.header{
+  padding: 0 .3rem;
+}
+.header_logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media (min-width: 768px) { 
+  .header_logo {
+      justify-content: flex-end;
+  }
+}
+/* End Header */
+
+/* formMajor */
+.formMajor {
+  padding: var(--separacion);
+}
+.formMajor_content {
+  background-color: rgba(19, 35, 47, 0.9);
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .formMajor_content {
+    width: 50rem;
+  }
+  .formMajor {
+    display: grid;
+    margin-left: 80rem;
+  }
+
+}
+.formMajor_border {
+  border: 1px solid var(--blanco);
+  margin: 2rem;
+  padding: 1.5rem;
+}
+.formMajor_btn {
+  margin: .5rem;
+  padding: .5rem;
+}
+.new {
+  font-size: 1.3rem;
+  background-color: var(--gris);
+  border-radius: 5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  transition: .3s;
+}
+.new:hover {
+  background-color: var(--verde);
+  color: var(--primario);
+}
+.update {
+  font-size: 1.1rem;
+  background-color: var(--verde);
+  color: var(--primario);
+  border-radius: 5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  transition: .3s;
+}
+.update:hover {
+  background-color: var(--gris);
+  color: var(--blanco);
+}
+@media (min-width: 768px) { 
+  .btn_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+  }
+  .new {
+    font-size: 1.5rem;
+  }
+  .update {
+    font-size: 1.5rem;
+  }
+}
+/* End formMajor */
+
+/* Form_one */
+.title_update {
+  font-size: 1.5rem;
+  color: var(--blanco);
+}
+.campo_input {
+  background-color: transparent;
+  border: 0.1px solid var(--blanco);
+  border-radius: 5rem;
+  width: 13rem;
+  padding: 1rem 2.3rem 1rem 2.3rem;
+  text-align: center;
+  color: var(--gris);
+}
+.btn_consulta {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: var(--verde);
+  color: var(--gris);
+  border: none;
+  border-radius: 5rem;
+  width: 13rem;
+  padding: 1rem 2rem 1rem 2rem;
+  transition: .3s;
+}
+.btn_consulta:hover {
+  background-color: #179b77;
+  color: var(--blanco);
+}
+@media (min-width: 768px) { 
+  .title_update {
+    margin: 0 0 1rem 0;
+  }
+  .campo_input { 
+    width: 35rem;
+    color: #6e828b;
+   }
+  .btn_consulta { 
+    font-size: 1.6rem;
+    padding: 1.3rem 2rem 1.3rem 2rem;
+  }
+}
+/* End Form_one */
+
+/* Form_two */
+@media (min-width: 768px) { 
+
+  .form_email {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 0.1px solid var(--blanco);
+    border-radius: 5rem;
+    width: 30rem;
+    padding: 1rem 2.3rem 1rem 2.3rem;
+    text-align: center;
+    color: var(--gris);
+  }
+}
+.form_one_input {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 0.1px solid var(--blanco);
+  border-radius: 5rem;
+  width: 13rem;
+  padding: 1rem 2.3rem 1rem 2.3rem;
+  text-align: center;
+  color: var(--gris);
+}
+.form_email {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 0.1px solid var(--blanco);
+  border-radius: 5rem;
+  width: 13rem;
+  padding: 1rem 2.3rem 1rem 2.3rem;
+  text-align: center;
+  color: var(--gris);
+}
+.autorizo {
+  font-size: 1.3rem;
+  color: var(--blanco);
+}
+/* End Form_two */
+/* Id ocultar para ocultar Form Nuevo Usuario */
+#obj2 {
+  display: none;
+}
+/* End Id ocultar para ocultar Form Nuevo Usuario */

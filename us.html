@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="cleartype" content="on"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <title>Dev Crayon - Developer Front End</title>
+    <meta name="author" content="Brayam Martínez" />
+    <meta name="copyright" content="DEV CRAYON" />
+    <meta name="description" content="I'm Brayam Martinez, Front End Developer. I create solutions and optimize client-side projects to provide an excellent user experience.">
+    <meta name="abstract" content="Soy Brayam Martinez, Desarrollador Front End. Creo soluciones y optimizo los proyectos del lado cliente para brindar una excelente experiencia de usuario." />
+    <link rel="canonical" href="https://www.devcrayon.com/" />
+    <meta property="og:type" content="website" />
+	<meta property="og:title" content="Desarrollador Front End" />
+    <meta property="og:description" content="I'm Brayam Martinez, Front End Developer. I create solutions and optimize client-side projects to provide an excellent user experience.">
+    <meta property="og:url" content="https://www.devcrayon.com/" />
+	<meta property="og:site_name" content="devcrayon" />
+    <meta property="og:image" content="https://www.devcrayon.com/build/img/logo-brayam.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="build/img/logo-b-dark.ico"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet">
+     <!-- App css -->
+     <link rel="stylesheet" href="build/css/app.css">
+     <!-- Icons font-awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+     <!-- Tailwind css -->
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<div id="page">
+    <!-- Menu Nav -->
+    <header>
+        <nav class="navbar">
+            <label class="navbar-toggle" for="chkToggle">
+                    <i class="fa fa-bars"></i>
+                </label>
+            <a href="index.html" class="logo"><img src="build/img/logo-b-light.svg" alt="Logo Brayam"></a>
+            <input type="checkbox" id="chkToggle"></input>
+            <ul class="main-nav">
+            <li>
+                <a class="navegacion__link navegacion__link--activo" href="#about">About Me</a>
+            </li>
+            <li>
+                <a class="navegacion__link navegacion__link--hover" href="#portfolio">Portfolio</a>
+            </li>
+            <li>            
+                <a class="navegacion__link navegacion__link--hover" href="#myexperience">Experience</a>
+            </li>
+            <li>
+                <a class="navegacion__link navegacion__link--hover" href="#contact">Contact Me</a>
+            </li>
+            <li>
+                <a class="navegacion__link navegacion__link--hover" href="index.html"><i class="fa-solid fa-language"></i> Cambiar Idioma</a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End Menu Nav -->
+    
+    <main>
+        <!-- Whatsapp -->
+        <a href="https://api.whatsapp.com/send?phone=+573223704897&text=Hello%21%20would%20like%20more%20information.%20" class="float" target="_blank">
+            <i class="fab fa-whatsapp my-float"></i>
+        </a>
+        <!-- End Whatsapp -->
+
+        <!-- section home -->
+        <section class="home">
+            <div class="home__contenedor contenedor">
+                <div class="perfil"><img src="build/img/avatar-2.svg" alt="Avatar Brayam"></div>
+                    <div class="text-perfil">
+                        <h1 class="text-name">Brayam Martínez <br> Developer Front End</h1>
+                        <!-- <h2 class="text-description">Desarrollador FrontEnd</h2> -->
+                    </div>
+                    <div class="icons">                    
+                        <div class="img-icons"><img class="neon" src="build/img/css.png" alt="css"></div>
+                        <div class="img-icons"><img class="neon" src="build/img/sass.png" alt="sass"></div>
+                        <div class="img-icons"><img class="neon"src="build/img/js.png" alt="Js"></div>
+                        <div class="img-icons"><img class="neon"src="build/img/react.png" alt="React"></div>
+                        <div class="img-icons"><img class="neon" src="build/img/node.png" alt="node"></div>
+                    </div>
+                    <div class="content-btn">
+                        <a class="btn" href="#contact"><i class="fa-solid fa-file-contract"></i> Hire Me</a>
+                        <a class="btn" href="cv/hv.html" target="_blank"><i class="fa-solid fa-file-lines"></i> See Resume</a>
+                    </div>
+                    <div class="content-btn">
+                        <a class="btn" href="index.html"><i class="fa-solid fa-language"></i> Cambiar Idioma</a>
+                    </div>
+            </div>
+        </section>
+        <!-- End section home -->
+
+        <!-- section about -->
+        <section class="about" id="about">
+            <div class="about__contenedor contenedor">
+                <div class="me">
+                    <p class="title_about">About Me</p>
+                    <img class="title_avatar" src="build/img/avatar-1.svg" alt="Avatar Brayam">
+                </div>
+                <div class="about__text">
+                    <p>My name is Brayam Martínez Perdomo, Telecommunications Engineer and Front End Developer.
+                        Created solutions as a team, with leadership role, using tools like css, sass, javascript, React and node.js.
+                        In order to optimize client-side projects and provide an excellent user experience.
+                    </p>
+                </div>
+                <div class="barra-progreso">
+                    <h1 class="title_developer">Skills</h1>
+                    <div class="barra_container">                   
+                        <div class="mb-1 text-2xl font-medium text-white">HTML</div>
+                        <div class="md:w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div class="h-6 bg-orange-600 rounded-full text-lg text-center text-white" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="barra_container">
+                        <div class="mb-1 text-2xl font-medium text-white">CSS</div>
+                        <div class="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div class="h-6 bg-blue-600 rounded-full dark:bg-blue-500 text-lg text-center text-white" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="barra_container">
+                        <div class="mb-1 text-2xl font-medium text-white">SASS</div>
+                        <div class="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div class="h-6 bg-pink-600 rounded-full text-lg text-center text-white" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="barra_container">
+                        <div class="mb-1 text-2xl font-medium text-white">JS</div>
+                        <div class="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div class="h-6 bg-yellow-500 rounded-full text-lg text-center text-white" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="barra_container w-full">
+                        <div class="mb-1 text-2xl font-medium text-white">NODE.JS</div>
+                        <div class="w-full h-6 bg-gray-200 rounded-full dark:bg-gray-700">
+                            <div class="h-6 bg-green-600 rounded-full text-lg text-center text-white" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End section about -->
+
+
+        <!-- Trabajos -->
+        <section class="contenedor productos" id="portfolio">
+            <h2 class="text-center text-white text-5xl py-5">Portfolio</h2>
+    
+            <div class="productos__listado">
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Previsora</p>
+                    <img src="build/img/trabajos/previsora.png" alt="Previsora Trabajos Fron End Realizados" />
+                    <a href="portafolio/previsora/previsora.html" target="_blank">See more...</a>
+                </div>
+    
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Cavipetrol</p>
+                    <img src="build/img/trabajos/cavipetrol.png" alt="Cavipetrol Trabajos Fron End Realizados" />
+                    <a href="portafolio/cavipetrol/cavipetrol.html" target="_blank">See more...</a>
+                </div>
+    
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Positiva</p>
+                    <img src="build/img/trabajos/positiva.png" alt="Positiva Trabajos Fron End Realizados" />
+                    <a href="portafolio/positiva/positiva.html" target="_blank">See more...</a>
+                </div>
+
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Generalli</p>
+                    <img src="build/img/trabajos/generali.jpg" alt="Generalli Trabajos Fron End Realizados" />
+                    <a href="portafolio/generali/generali.html" target="_blank">See more...</a>
+                </div>
+    
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Pizano</p>
+                    <img src="build/img/trabajos/pizano.png"" alt="Pizano Trabajos Fron End Realizados" />
+                    <a href="portafolio/pizano/pizano.html" target="_blank">See more...</a>
+                </div>
+    
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Autogalias</p>
+                    <img src="build/img/trabajos/header.png" alt="Autogalias Trabajos Fron End Realizados" />
+                    <a href="portafolio/autogalias/autogalias.html" target="_blank">See more...</a>
+                </div>
+                <div id="obj2">
+                    <a class="works_btn" href="javascript:void(0);"  onclick="mostrarPortafolio();">See more...</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor productos" id="obj1">
+            <div class="productos__listado">
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Audífonos</p>
+                    <img src="build/img/trabajos/pro.png" alt="Trabajos Fron End personalizados" />
+                    <a href="portafolio/otros/audifonos/index.html" target="_blank">See more...</a>
+                </div>
+    
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Architecture with Wood</p>
+                    <img src="build/img/trabajos/madera.png" alt="Trabajos Fron End personalizados" />
+                    <a href="portafolio/otros/artemadera/index.html" target="_blank">See more...</a>
+                </div>
+    
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Nucleus</p>
+                    <img src="build/img/trabajos/nucleus.png" alt="Trabajos Fron End personalizados" />
+                    <a href="portafolio/otros/nucleus/index.html" target="_blank">See more...</a>
+                </div>
+
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Cafetería</p>
+                    <img src="build/img/trabajos/cafeteria.png" alt="Trabajos Fron End personalizados" />
+                    <a href="portafolio/otros/cafeteria/index.html" target="_blank">See more...</a>
+                </div>
+    
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">App Foods</p>
+                    <img src="build/img/trabajos/comida.png"" alt="Trabajos Fron End personalizados" />
+                    <a href="portafolio/otros/appcomida/index.html" target="_blank">See more...</a>
+                </div>
+    
+                <div class="producto__descripcion">
+                    <p class="text-center text-white text-4xl py-5">Guitar</p>
+                    <img src="build/img/trabajos/guitarra.png" alt="Trabajos Fron End personalizados" />
+                    <a href="portafolio/otros/guitarras/index.html" target="_blank">See more...</a>
+                </div>
+                <div>
+                    <a class="works_btn" href="javascript:void(0);"  onclick="ocultarPortafolio();">See Less</a>
+                </div>
+            </div>
+        </section>
+        <!-- End Trabajos -->
+
+        <!-- section experience -->
+        <section class="experience resume" id="myexperience">
+            <div class="experience-title contenedor">
+                <h2>Experience</h2>
+            </div>
+            <div class="experience__contenedor contenedor">
+                <div class="experience__content resume-item">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <h1 class="experience__company"><i class="fa-solid fa-laptop-code"></i> SOFTGIC SAS</h1>
+                    <h2 class="experience__time"><i class="fa-regular fa-calendar"></i> MAY 2022 - SEPTEMBER 2022</h2>
+                    <h3 class="experience__post"><i class="fa-solid fa-user-tie"></i> Position: Customer Succes Leader</h3>
+                </div>
+
+                <div class="experience__content resume-item">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <h1 class="experience__company"><i class="fa-solid fa-laptop-code"></i>  DISTRIBUIDORA P&P</h1>
+                    <h2 class="experience__time"><i class="fa-regular fa-calendar"></i> NOVEMBER 2017 - JANUARY 2022</h2>
+                    <h3 class="experience__post"><i class="fa-solid fa-user-tie"></i> Cargo: Developer web</h3>
+                </div>
+            </div>
+        </section>
+        <!-- End section experience -->
+
+        <!-- section education -->
+        <section class="experience resume">
+            <div class="experience-title contenedor">
+                <h2>Education</h2>
+            </div>
+            <div class="experience__contenedor contenedor">
+                <div class="experience__content resume-item">
+                    <p class="resume-title">Education</p>
+                    <p class="experience__company"><i class="fa-solid fa-graduation-cap"></i> UNAD</p>
+                    <p class="experience__time"><i class="fa-regular fa-calendar"></i> 2017 - 2021</p>
+                    <p class="experience__post"><i class="fa-sharp fa-solid fa-user-graduate"></i> Telecommunication engineer</p>
+                </div>
+
+                <div class="experience__content resume-item">
+                    <p class="resume-title">Additional preparation</p>
+                    <p class="experience__company"><i class="fa-solid fa-graduation-cap"></i> Enyoi</p>
+                    <p class="experience__time"><i class="fa-regular fa-calendar"></i> 2022 - 2023</p>
+                    <p class="experience__post"><i class="fa-solid fa-award"></i> Developer Web Full Stack</p>
+                </div>
+            </div>        
+            <div class="content_btn">
+                <a class="btn_cv" href="cv/hv.html" target="_blank"><i class="fa-solid fa-file-lines"></i> See Resume</a>
+            </div>
+        </section>
+        <!-- End section education -->   
+
+            <!-- Contácteme -->
+        <section class="contacteme" id="contact">
+            <h2 class="text-center text-white text-5xl py-5">Contact Me</h2>
+            <div class="contacteme_contenedor contenedor">
+                <div class="contacteme_icons">
+                    <p><i class="fa-solid fa-location-dot py-5"></i> Race 11 # 15-65</p>
+                    <p><i class="fa-solid fa-phone py-5"></i> (+57) 322-370-4897</p>
+                    <p><i class="fa-solid fa-envelope py-5"></i> 
+                    <a href="mailto:brayammartinezperdomo@gmail.com" class="email">brayammartinezperdomo@gmail.com</a></p>
+                    <p><i class="fa-solid fa-envelope py-5"></i> 
+                        <a href="mailto:devcrayon@devcrayon.com" class="email">devcrayon@devcrayon.com</a></p>
+                    <div class="icons-social">
+                        <ul class="social-media">
+                            <li><a href="https://www.facebook.com/brayam.martinezperdomo" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>                        
+                            <li><a href="https://api.whatsapp.com/send?phone=+573223704897&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n.%20" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/brayam-martinez-perdomo/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacteme_form">
+                <div class="p-10 mt-5">
+                    <form id="formulario" action="devcrayon/phpmailer.php" method="post" class="space-y-3">                                  
+                        <div class="flex flex-col space-y-2">
+                            <label for="asunto" class="font-regular font-medium text-white">Subject</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Subject" class="border border-gray-300 px-3 py-2 rounded-lg">
+                        </div>
+
+                        <div class="flex flex-col space-y-2">
+                            <label for="nombre" class="font-regular font-medium text-white">Name</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Name" class="border border-gray-300 px-3 py-2 rounded-lg">
+                        </div>
+                        
+                        <div class="flex flex-col space-y-2">
+                            <label for="Email" class="font-regular font-medium text-white">Email address</label>
+                            <input type="email" id="email" name="email" placeholder="Email address" class="border border-gray-300 px-3 py-2 rounded-lg">
+                        </div>
+
+                        <div class="flex flex-col space-y-2">
+                            <label for="phone" class="font-regular font-medium text-white">Phone</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Phone" class="border border-gray-300 px-3 py-2 rounded-lg">
+                        </div>
+                        <div class="flex flex-col space-y-2">
+                                <label for="mensaje" class="font-regular font-medium text-white">Message</label>
+                                <textarea id="mensaje" placeholder="Message..." name="mensaje" class="border border-gray-300 px-3 py-2 rounded-lg h-36"></textarea>
+                            </div> 
+                            
+                            <input type="submit" value="Send" name="submit" class="bg-pink-600 shadow-xl hover:bg-yellow-300 text-white font-bold rounded-full p-4 w-48">
+                        </div>                   
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contácteme -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_contenedor contenedor">
+            <p>All rights reserved &copy;</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+</div>
+
+    <script src="js/app.js"></script>
+    <script src="js/other.js"></script>
+    
+</body>
+</html>

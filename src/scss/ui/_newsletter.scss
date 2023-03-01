@@ -1,0 +1,82 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+
+/* Newsletter */
+.newsletter {
+  padding: v.$separacion;
+}
+.newsletter_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-color: rgb(229 231 235);
+}
+.newsletter_content_generalli {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container{ 
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  border-radius: 1rem;
+}
+@media (min-width: 768px) { 
+  .newsletter_content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
+.works_btn_title {
+  color: v.$amarillo;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) { 
+  .works_btn_title {
+    font-size: 2rem;
+  }
+}
+.newsletter_information p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: left;
+  color: v.$blanco;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;  
+  margin-left: 1rem;
+}
+
+.ul-li {
+  color: v.$blanco;
+  list-style: none;
+  text-align: center;
+}
+.li {
+  background-color: v.$amarillo;
+  border-radius: .5rem;
+  margin: 1rem 3rem 1rem 3rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+.a {
+  color: v.$primario;
+}
+.a:hover {
+  color: v.$blanco;
+}
+.li:hover {
+  background-color: v.$rojo;
+}
+@media (min-width: 768px) { 
+  .li {
+    margin: 1rem 6rem 1rem 6rem;
+    padding: 1rem;
+  } 
+}
+/* End Newsletter */

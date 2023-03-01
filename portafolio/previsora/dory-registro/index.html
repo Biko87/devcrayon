@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Previsora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../../img/logo-b-dark.ico">
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>    
+    <link rel="stylesheet" href="../../css/normalize.css">    
+    <link rel="stylesheet" href="css/style.css">      
+  </head>
+  <body>
+    <!-- Header -->
+      <header class="header">
+        <div class="header_logo contenedor">
+          <img src="images/logo.png" alt="Logo Previsora"> 
+        </div>
+      </header>
+      <!-- End Header -->   
+      
+      <section class="formMajor">
+        <div class="formMajor_content contenedor">
+            <div class="formMajor_border">
+              <div class="btn_content">
+                <div class="formMajor_btn">
+                    <a class="new" href="javascript:void(0);"  onclick="mostrar();">Nuevo Usuario</a>
+                </div>
+                <div class="formMajor_btn">
+                  <a class="update" href="javascript:void(0);"  onclick="ocultar();">Actualiza Tus Datos</a>
+                </div>
+              </div>           
+        <section class="form_one" id="obj1">
+              <h1 class="title_update">Actualizar Datos</h1>
+                <form class="formUpdate" action="">
+                  <div class="campo">
+                    <input class="campo_input"  id="numero" type="number" placeholder="Cédula/Nit*" required>
+                  </div>
+                    <input class="btn_consulta" type="button" value="Consultar">
+                </form>
+          </section>
+
+          <section class="form_two" id="obj2">
+            <h1 class="title_update">Registrar Nuevo Usuario</h1>
+                <form action="">
+                  <div class="formUpdate">
+                    <div class="form_one_campo">
+                      <input class="form_one_input"  id="numero" type="number" placeholder="Cédula" required>
+                    </div>
+                    <div class="campo">
+                      <input class="form_one_input"  id="numero" type="number" placeholder="Código Aliado" required>
+                    </div>
+                    <div class="campo">
+                      <input class="form_one_input"  id="numero" type="text" placeholder="Nombres" required>
+                    </div>
+                    <div class="campo">
+                      <input class="form_one_input"  id="numero" type="text" placeholder="Apellidos" required>
+                    </div>
+                    <div class="campo">
+                      <input class="form_one_input"  id="numero" type="number" placeholder="Teléfono" required>
+                    </div>
+                    <div class="campo">
+                      <input class="form_one_input"  id="numero" type="text" placeholder="Dirección" required>
+                    </div>
+                  </div>
+                  <div class="campo">
+                    <input class="form_email"  id="numero" type="email" placeholder="Email" required>
+                  </div>
+                  <p class="autorizo">Autorizo a Previsora el envío o contacto por cualquiera de los 
+                    medios aquí registrados para comunicaciones comerciales futuras.</p>
+                  <input class="btn_consulta" type="button" value="Nuevo Asistente">
+                </form>
+        </section>
+            </div>            
+        </div>
+      </section>
+      <script src="js/app.js"></script>
+  </body>
+</html>
